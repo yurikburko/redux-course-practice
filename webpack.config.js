@@ -33,6 +33,14 @@ module.exports = {
                     }
 
                 }]
+            },
+            {
+                enforce: 'pre',
+                test: /\.js$/,
+                loader: 'eslint-loader',
+                include: [
+                    path.resolve(__dirname, "src"),
+                ]
             }
         ]
     }
